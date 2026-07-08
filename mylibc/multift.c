@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:47:25 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/09 00:22:49 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 00:40:45 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -216,4 +216,20 @@ int	ft_str_is_printable(char *str)
 		i++;
 	}
 	return (1);
+}
+
+char	*ft_strupcase(char *str)
+{
+	int		i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] <= 'z' && str[i] >= 'a')
+		{
+			str[i] = str[i] - 32;
+		}
+	}
+
+	return (str);
 }
