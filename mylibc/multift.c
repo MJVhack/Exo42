@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   multift.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
+/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:47:25 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 23:34:32 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/08 23:47:45 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -160,6 +160,23 @@ int	ft_str_is_numeric(char *str)
 	while (str[i] != '\0')
 	{
 		if (!(str[i] <= '9' && str[i] >= '0'))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
+}
+
+int	ft_str_is_lowercase(char *str)
+{
+	int		i;
+	char	c;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (!(str[i] <= 'z' && str[i] >= 'a'))
 		{
 			return (0);
 		}
