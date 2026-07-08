@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
+/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 23:16:54 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 23:33:01 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/09 00:05:41 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	ft_str_is_numeric(char *str)
 {
 	int		i;
-	char	c;
 
 	i = 0;
 	while (str[i] != '\0')

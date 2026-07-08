@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 23:38:53 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/08 23:45:54 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 00:05:32 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	ft_str_is_lowercase(char *str)
 {
 	int		i;
-	char	c;
 
 	i = 0;
 	while (str[i] != '\0')
