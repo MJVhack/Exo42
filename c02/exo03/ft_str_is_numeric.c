@@ -6,7 +6,7 @@
 /*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 23:16:54 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 23:26:30 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/08 23:33:01 by evil.diabri      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ int	ft_str_is_numeric(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		c = str[i];
-		if (!(c <= '9' && c >= '0'))
+		if (!(str[i] <= '9' && str[i] >= '0'))
 		{
 			return (0);
 		}
