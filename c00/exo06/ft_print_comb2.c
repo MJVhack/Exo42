@@ -6,7 +6,7 @@
 /*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 20:17:44 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 22:40:08 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/08 23:12:15 by evil.diabri      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,13 +70,3 @@ void	ft_print_comb2(void)
 	d = '0';
 	mainwhile(a, b, c, d);
 }
-
-int	main(void)
-{
-	ft_print_comb2();
-	return (0);
-}
-
-
-
-// Jvais faire des trucs js la a 40
