@@ -6,7 +6,7 @@
 /*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 17:26:42 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 17:59:01 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/08 23:14:15 by evil.diabri      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,4 @@ void	ft_putstr(char *str)
 		i++;
 	}
 	write(1, "\0\n", 2);
-}
-
-int	main(void)
-{
-	ft_putstr("test");
 }

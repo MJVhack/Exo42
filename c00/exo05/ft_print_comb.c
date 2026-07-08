@@ -6,7 +6,7 @@
 /*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 18:59:12 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 22:39:31 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/08 23:13:32 by evil.diabri      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,4 @@ void	ft_print_comb(void)
 		}
 		a++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_comb();
-	return (0);
 }
