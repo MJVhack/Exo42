@@ -6,7 +6,7 @@
 /*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 20:07:00 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 20:30:36 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/08 23:31:12 by evil.diabri      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	ft_str_is_alpha(char *str)
 		{
 			return (0);
 		}
+		i++;
 	}
 	return (1);
 }
