@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 20:17:44 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/09 12:18:08 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 18:05:06 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	ft_print_result(char a, char b, char c, char d)
 	return ;
 }
 
-void	mainwhile(char a, char b, char c, char d)
+void	ft_mainwhile(char a, char b, char c, char d)
 {
 	while (a <= '9')
 	{
@@ -44,7 +44,7 @@ void	mainwhile(char a, char b, char c, char d)
 			{
 				while (d <= '9')
 				{
-					nktmr42(a, b, c, d);
+					ft_print_result(a, b, c, d);
 					d++;
 				}
 				c++;

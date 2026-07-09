@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 18:59:12 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/09 12:15:59 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 18:04:37 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	ft_print_comb(void)
 			{
 				if (a < b && b < c)
 				{
-					nktmr42(a, b, c, immonde);
+					ft_print_result(a, b, c, immonde);
 				}
 				c++;
 			}
