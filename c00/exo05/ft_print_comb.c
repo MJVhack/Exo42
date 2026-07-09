@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 18:59:12 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/09 12:13:57 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 12:15:59 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_print_result(char a, char b, char c, char immonde)
 {
+	// Que vous le sachiez, cette fonctio s'appeler 'nktmr42' et c'était assumé
 	write(1, &a, 1);
 	write(1, &b, 1);
 	write(1, &c, 1);
