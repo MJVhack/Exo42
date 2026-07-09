@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
+/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 20:17:44 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 23:12:15 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/09 12:15:05 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	nktmr42(char a, char b, char c, char d)
+void	ft_print_result(char a, char b, char c, char d)
 {
+	// Que vous le sachiez, cette fonctio s'appeler 'nktmr42' et c'était assumé
+	// oui oui les 2 s'appelaient comme ca...
 	char	dot;
 
 	dot = '.';

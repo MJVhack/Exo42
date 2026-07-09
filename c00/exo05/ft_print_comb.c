@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
+/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 18:59:12 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 23:13:32 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/09 12:13:57 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	nktmr42(char a, char b, char c, char immonde)
+void	ft_print_result(char a, char b, char c, char immonde)
 {
 	write(1, &a, 1);
 	write(1, &b, 1);
