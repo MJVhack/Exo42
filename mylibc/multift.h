@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/09 14:12:33 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 14:55:41 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,4 @@ int		ft_str_is_uppercase(char *str);
 int		ft_str_is_printable(char *str);
 char	*ft_strupcase(char *str);
 char	*ft_strlowcase(char *str);
+char	*ft_strcapitalize(char *str);
