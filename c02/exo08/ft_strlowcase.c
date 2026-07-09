@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/09 14:08:22 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/09 14:11:54 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 14:50:58 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,5 @@ char	*ft_strlowcase(char *str)
 			str[i] = str[i] + 32;
 		}
 	}
-
 	return (str);
 }
