@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:47:25 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/09 14:55:51 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 18:17:46 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -268,4 +268,27 @@ char	*ft_strcapitalize(char *str)
 		i++;
 	}
 	return (str);
+}
+unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+	while (src[j] != '\0')
+	{
+		j++;
+	}
+	if (size <= 0)
+	{
+		return (j);
+	}
+	while (src[i] != '\0' || i < size - 1)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (j);
 }
