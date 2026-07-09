@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:47:25 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/09 18:17:46 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/09 18:27:29 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_putstr(char *str)
 {
 	int	i;
 
-	i= 0;
+	i = 0;
 	while (str[i] != '\0')
 	{
 		write(1, &str[i], 1);
@@ -62,9 +62,9 @@ void	ft_swap(int *a, int *b)
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int tabtmp[size];
-	int i;
-	int r;
+	int	tabtmp[size];
+	int	i;
+	int	r;
 
 	i = 0;
 	r = size;
@@ -110,7 +110,7 @@ void	ft_sort_int_tab(int *tab, int size)
 
 void	ft_strcpy(char *src, char *dest)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (src[i] != '\0')
@@ -230,7 +230,6 @@ char	*ft_strupcase(char *str)
 			str[i] = str[i] - 32;
 		}
 	}
-
 	return (str);
 }
 
@@ -246,7 +245,6 @@ char	*ft_strlowcase(char *str)
 			str[i] = str[i] + 32;
 		}
 	}
-
 	return (str);
 }
 
@@ -269,6 +267,7 @@ char	*ft_strcapitalize(char *str)
 	}
 	return (str);
 }
+
 unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size)
 {
 	int	i;
