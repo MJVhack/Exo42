@@ -6,7 +6,7 @@
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/10 14:42:50 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/10 14:44:48 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -200,6 +200,29 @@ unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size)
 	dest[i] = '\0';
 	return (j);
 }
+
+void	ft_putstr_non_printable(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] < 32 || str[i] == 127)
+		{
+			ft_putchar('\\');
+			ft_print_hex(str[i] / 16);
+			ft_print_hex(str[i] % 16);
+		}
+		else
+		{
+			ft_putchar(str[i]);
+		}
+		i++;
+	}
+	ft_putchar('\n');
+}
+
 
 void	ft_print_hex(char c)
 {
