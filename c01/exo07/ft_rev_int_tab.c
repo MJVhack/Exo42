@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evil.diabriek <e.diabriek@student.42.fr    +#+  +:+       +#+        */
+/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 18:23:10 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/08 19:24:46 by evil.diabri      ###   ########.fr       */
+/*   Updated: 2026/07/17 20:26:35 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,15 @@ void	ft_rev_int_tab(int *tab, int size)
 	int	r;
 
 	i = 0;
-	r = size;
-	while (i <= size)
+	r = size - 1;
+	while (i < size)
 	{
 		tabtmp[i] = tab[r];
 		i++;
 		r--;
 	}
 	i = 0;
-	while (i <= size)
+	while (i < size)
 	{
 		tab[i] = tabtmp[i];
 		i++;

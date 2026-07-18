@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
+/*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/08 18:38:43 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/17 21:47:57 by e.diabriek       ###   ########.fr       */
+/*   Created: 2026/07/10 14:23:21 by e.diabriek        #+#    #+#             */
+/*   Updated: 2026/07/12 02:30:22 by e.diabriek       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "../../mylibc/multift.h"
 
-void	ft_sort_int_tab(int *tab, int size)
+void	*ft_print_memory(void *addr, unsigned int size)
 {
-	int	a;
-	int	b;
+	char 	*str;
+	int		i;
+	char	*tmp;
 
-	a = 0;
-	while (a <= size - 1)
+	str = (char*)addr;
+	ft_putnbr(((long long)addr));
+	i = 0;
+	while (str[i] != '\0')
 	{
-		b = 0;
-		while (b <= size - 1)
-		{
-			if (tab[a] < tab[b])
-			{
-				ft_swap(&tab[a], &tab[b]);
-			}
-			b++;
-		}
-		a++;
+		tmp;
+
+		i++;
 	}
+
 }
