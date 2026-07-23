@@ -35,21 +35,3 @@ unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size)
 	dest[i] = '\0';
 	return (j);
 }
-
-int	main(void)
-{
-	char	*str;
-	char	dest[100];
-
-	str = "Ta mère dans mon lit";
-	ft_putnbr(ft_strlcpy(str, dest, 5));
-	ft_putstr(dest);
-	ft_putchar('\n');
-	ft_putnbr(ft_strlcpy(str, dest, 10));
-	ft_putstr(dest);
-	ft_putchar('\n');
-	ft_putnbr(ft_strlcpy(str, dest, 10));
-	ft_putstr(dest);
-	ft_putchar('\n');
-	return (0);
-}
