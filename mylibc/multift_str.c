@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/24 18:22:28 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/24 21:05:27 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -248,4 +248,39 @@ int	ft_strcmp(char *s1, char *s2)
 		s2++;
 	}
 	return ((unsigned char)*s1 - (unsigned char)*s2);
+}
+
+int	ft_strncmp(char *s1, char *s2, size_uit n)
+{
+	if (n == 0) return(0);
+	while (*s1 == *s2 && n > 1)
+	{
+		if (*s1 == '\0')
+		{
+			return (0);
+		}
+		s1++;
+		s2++;
+		n--;
+	}
+	return ((unsigned char)*s1 - (unsigned char)*s2);
+}
+
+char	*ft_strcat(char *dest, char *src)
+{
+	char	*ptr;
+
+	ptr = dest;
+	while (*dest)
+	{
+		dest++;
+	}
+	while (*src)
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (ptr);
 }

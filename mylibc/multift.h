@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/24 18:33:07 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/24 21:04:49 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,5 @@ unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size);
 void	ft_print_hex(char c);
 void	ft_putstr_non_printable(char *str);
 int		ft_strcmp(char *s1, char *s2);
+int		ft_strncmp(char *s1, char *s2, size_uit n);
+char	*ft_strcat(char *dest, char *src);
