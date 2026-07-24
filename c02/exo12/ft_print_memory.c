@@ -13,20 +13,29 @@
 #include <unistd.h>
 #include "../../mylibc/multift.h"
 
-void	*ft_print_memory(void *addr, unsigned int size)
+void	*ft_print_memory(void *addr, size_ull size)
 {
 	char 	*str;
-	int		i;
 	char	*tmp;
+	int		i; 
+	int		j; // Combien de fois ya de ligne
+	int		k; // Gère l'affichage lettre par lettre
+	int		l; // Censé gérer le 16 par 16 de str
 
 	str = (char*)addr;
 	ft_putnbr(((long long)addr));
 	i = 0;
-	while (str[i] != '\0')
+	j = size / 16;
+	while (i <= j)
 	{
-		tmp;
+		k = 0;
+		while (k <= 16)
+		{
 
-		i++;
+			// Vz je laisse tomber			
+			ft_putchar('\n');
+			k++;
+		}
 	}
 
 }
