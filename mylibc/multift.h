@@ -6,10 +6,12 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/24 18:22:12 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/24 18:29:31 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+typedef unsigned int size_i;
+typedef unsigned long size_ul;
 typedef unsigned long long size_ull;
 
 void	ft_putchar(char c);
