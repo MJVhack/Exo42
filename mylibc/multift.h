@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+typedef unsigned long long size_ull;
+
 void	ft_putchar(char c);
 void	ft_putnbr(long long n);
 void	ft_putstr(char *str);
