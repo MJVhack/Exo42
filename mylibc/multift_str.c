@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/24 21:14:12 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/24 23:10:47 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -303,4 +303,27 @@ char	*ft_strncat(char *dest, char *src, size_uit nb)
 	}
 	*dest = '\0';
 	return (ptr);
+}
+
+char	*ft_strstr(char *str, char *to_find)
+{
+	char	*tmp;
+	char	*tmp2;
+
+	if (!*to_find)
+		return (str);
+	while (*str)
+	{
+		tmp = str;
+		tmp2 = to_find;
+		while (*tmp && *tmp2 && *tmp == *tmp2)
+		{
+			tmp++;
+			tmp2++;
+		}
+		if (!*tmp2)
+			return (str);
+		str++;
+	}
+	return (0);
 }
