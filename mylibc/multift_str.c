@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   multift_str.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
+/*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/10 14:44:48 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/24 18:22:28 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -234,4 +234,18 @@ void	ft_print_hex(char c)
 	{
 		ft_putchar((c % 10) + 'A');
 	}
+}
+
+int	ft_strcmp(char *s1, char *s2)
+{
+	while (*s1 == *s2)
+	{
+		if (*s1 == '\0')
+		{
+			return (0);
+		}
+		s1++;
+		s2++;
+	}
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }

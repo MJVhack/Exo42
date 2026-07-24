@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   multift.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
+/*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/10 14:44:18 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/24 18:22:12 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,4 @@ char	*ft_strcapitalize(char *str);
 unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size);
 void	ft_print_hex(char c);
 void	ft_putstr_non_printable(char *str);
+int		ft_strcmp(char *s1, char *s2);
