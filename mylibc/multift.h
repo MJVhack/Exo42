@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/24 21:06:38 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/24 21:14:00 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,4 @@ void	ft_putstr_non_printable(char *str);
 int		ft_strcmp(char *s1, char *s2);
 int		ft_strncmp(char *s1, char *s2, size_uit n);
 char	*ft_strcat(char *dest, char *src);
+char	*ft_strncat(char *dest, char *src, size_uit nb);
