@@ -6,3 +6,10 @@ y'a un autre gars mais il a eu la merveilleuse idée de mettre son repo 42 en pr
 Bref, critiquer pas, jveux juste pas passez mes vacances a pas coder
 Et aussi jveux progresser en C, dcp jfais tout en voc sur mon serv (oui oui c'est totalement de la pub)
 bref, c'est .gg/ednity <-- développement serveur
+
+Btw, pour ceux qui se demande, non ce n'est pas vraiment un entrainement.Dans le sens ou j'integreré pas 42
+avant presque 6 ans, donc bon. Mon but premier et d'atteindre un bon (voir très bon) niveau en C
+De façon a ce que je pourrai dire plus tard 'Ah, 42 ? Ez, j'y suis entré uniquement pour prouver les compétences que 
+j'avais déjà' (phrase de prouveur++) 
+
+Mais bon, voici globalement l'ojectif que j'aimerai atteindre
