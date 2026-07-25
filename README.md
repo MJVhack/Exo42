@@ -7,9 +7,9 @@ Bref, critiquer pas, jveux juste pas passez mes vacances a pas coder
 Et aussi jveux progresser en C, dcp jfais tout en voc sur mon serv (oui oui c'est totalement de la pub)
 bref, c'est .gg/ednity <-- développement serveur
 
-Btw, pour ceux qui se demande, non ce n'est pas vraiment un entrainement.Dans le sens ou j'integreré pas 42
+Btw, pour ceux qui se demande, non ce n'est pas vraiment un entrainement. Dans le sens ou j'integrerais pas 42
 avant presque 6 ans, donc bon. Mon but premier et d'atteindre un bon (voir très bon) niveau en C
-De façon a ce que je pourrai dire plus tard 'Ah, 42 ? Ez, j'y suis entré uniquement pour prouver les compétences que 
+de façon a ce que je pourrai dire plus tard 'Ah, 42 ? Ez, j'y suis entré uniquement pour prouver les compétences que 
 j'avais déjà' (phrase de prouveur++) 
 
-Mais bon, voici globalement l'ojectif que j'aimerai atteindre
+Mais bon, voici globalement l'objectif que j'aimerai atteindre
