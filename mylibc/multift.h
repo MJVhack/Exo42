@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/24 23:10:29 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/26 00:14:20 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,5 @@ int		ft_strncmp(char *s1, char *s2, size_uit n);
 char	*ft_strcat(char *dest, char *src);
 char	*ft_strncat(char *dest, char *src, size_uit nb);
 char	*ft_strstr(char *str, char *to_find);
+size_uit	ft_size_charp_strlcat(char *ptr);
+size_uit	ft_strlcat(char *dest, char *src, size_uit size);
