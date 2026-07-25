@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
+/*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:23:21 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/12 02:30:22 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/25 23:15:16 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "../../mylibc/multift.h"
 
-void	*ft_print_memory(void *addr, size_ull size)
+void	*ft_print_memory(void *addr, size_ullt size)
 {
 	char 	*str;
 	char	*tmp;
-	int		i; 
+	int		i;
 	int		j; // Combien de fois ya de ligne
 	int		k; // Gère l'affichage lettre par lettre
 	int		l; // Censé gérer le 16 par 16 de str
@@ -32,7 +32,7 @@ void	*ft_print_memory(void *addr, size_ull size)
 		while (k <= 16)
 		{
 
-			// Vz je laisse tomber			
+			// Vz je laisse tomber
 			ft_putchar('\n');
 			k++;
 		}
