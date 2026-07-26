@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/26 20:43:40 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/26 21:36:50 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ int	ft_str_is_alpha(char *str)
 int	ft_str_is_numeric(char *str)
 {
 	int		i;
-	char	c;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -80,7 +79,6 @@ int	ft_str_is_numeric(char *str)
 int	ft_str_is_lowercase(char *str)
 {
 	int		i;
-	char	c;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -97,7 +95,6 @@ int	ft_str_is_lowercase(char *str)
 int	ft_str_is_uppercase(char *str)
 {
 	int		i;
-	char	c;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -192,7 +189,7 @@ unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size)
 	{
 		return (j);
 	}
-	while (src[i] != '\0' || i < size - 1)
+	while (src[i] != '\0' || (t_uint)i < size - 1)
 	{
 		dest[i] = src[i];
 		i++;
