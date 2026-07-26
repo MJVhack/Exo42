@@ -6,13 +6,13 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/26 00:14:20 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/26 20:45:00 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-typedef unsigned int size_uit;
-typedef unsigned long size_ult;
-typedef unsigned long long size_ullt;
+typedef unsigned int t_uint;
+typedef unsigned long t_ulong;
+typedef unsigned long long t_ulonglong;
 
 void	ft_putchar(char c);
 void	ft_putnbr(long long n);
@@ -34,9 +34,9 @@ unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size);
 void	ft_print_hex(char c);
 void	ft_putstr_non_printable(char *str);
 int		ft_strcmp(char *s1, char *s2);
-int		ft_strncmp(char *s1, char *s2, size_uit n);
+int		ft_strncmp(char *s1, char *s2, t_uint n);
 char	*ft_strcat(char *dest, char *src);
-char	*ft_strncat(char *dest, char *src, size_uit nb);
+char	*ft_strncat(char *dest, char *src, t_uint nb);
 char	*ft_strstr(char *str, char *to_find);
-size_uit	ft_size_charp_strlcat(char *ptr);
-size_uit	ft_strlcat(char *dest, char *src, size_uit size);
+t_uint	ft_size_charp_strlcat(char *ptr);
+t_uint	ft_strlcat(char *dest, char *src, t_uint size);

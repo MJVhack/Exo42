@@ -6,15 +6,15 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/25 22:53:06 by evild             #+#    #+#             */
-/*   Updated: 2026/07/26 00:11:55 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/26 20:44:31 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../mylibc/multift.h"
 
-size_uit	ft_size_charp_strlcat(char *ptr)
+t_uint	ft_size_charp_strlcat(char *ptr)
 {
-	size_uit	size_ptr;
+	t_uint	size_ptr;
 
 	size_ptr = 0;
 	while (*ptr)
@@ -25,12 +25,12 @@ size_uit	ft_size_charp_strlcat(char *ptr)
 	return (size_ptr);
 }
 
-size_uit	ft_strlcat(char *dest, char *src, size_uit size)
+t_uint	ft_strlcat(char *dest, char *src, t_uint size)
 {
 	char		*ptr;
-	size_uit	size_dest;
-	size_uit	size_src;
-	size_uit	available_size;
+	t_uint	size_dest;
+	t_uint	size_src;
+	t_uint	available_size;
 
 	ptr = src;
 	size_dest = 0;

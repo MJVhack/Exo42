@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/26 00:14:36 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/26 20:43:40 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -250,7 +250,7 @@ int	ft_strcmp(char *s1, char *s2)
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
 
-int	ft_strncmp(char *s1, char *s2, size_uit n)
+int	ft_strncmp(char *s1, char *s2, t_uint n)
 {
 	if (n == 0) return(0);
 	while (*s1 == *s2 && n > 1)
@@ -285,7 +285,7 @@ char	*ft_strcat(char *dest, char *src)
 	return (ptr);
 }
 
-char	*ft_strncat(char *dest, char *src, size_uit nb)
+char	*ft_strncat(char *dest, char *src, t_uint nb)
 {
 	char	*ptr;
 
@@ -328,9 +328,9 @@ char	*ft_strstr(char *str, char *to_find)
 	return (0);
 }
 
-size_uit	ft_size_charp_strlcat(char *ptr)
+t_uint	ft_size_charp_strlcat(char *ptr)
 {
-	size_uit	size_ptr;
+	t_uint	size_ptr;
 
 	size_ptr = 0;
 	while (*ptr)
@@ -341,12 +341,12 @@ size_uit	ft_size_charp_strlcat(char *ptr)
 	return (size_ptr);
 }
 
-size_uit	ft_strlcat(char *dest, char *src, size_uit size)
+t_uint	ft_strlcat(char *dest, char *src, t_uint size)
 {
 	char		*ptr;
-	size_uit	size_dest;
-	size_uit	size_src;
-	size_uit	available_size;
+	t_uint	size_dest;
+	t_uint	size_src;
+	t_uint	available_size;
 
 	ptr = src;
 	size_dest = 0;

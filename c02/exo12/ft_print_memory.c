@@ -6,14 +6,14 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:23:21 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/25 23:15:16 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/26 20:44:53 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "../../mylibc/multift.h"
 
-void	*ft_print_memory(void *addr, size_ullt size)
+void	*ft_print_memory(void *addr, t_ulonglong size)
 {
 	char 	*str;
 	char	*tmp;
