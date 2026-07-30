@@ -13,3 +13,5 @@ de façon a ce que je pourrai dire plus tard 'Ah, 42 ? Ez, j'y suis entré uniqu
 j'avais déjà' (phrase de prouveur++) 
 
 Mais bon, voici globalement l'objectif que j'aimerai atteindre
+
+PS: Les ExoBonus sont des exos que je veux faire moi pour moi hein. Ils sont loin d'être officiel c'est juste drôle enfait
