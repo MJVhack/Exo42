@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 19:40:01 by evild             #+#    #+#             */
-/*   Updated: 2026/07/30 21:49:07 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/30 22:42:50 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	ft_bruteforce(char *str)
 	char	actuelletter;
 	char	words[100];
 	t_uint	lastindex;
-	int		acsii;
 
 	lastindex = 0;
 	while (*str)
@@ -27,8 +26,7 @@ void	ft_bruteforce(char *str)
 		actuelletter = ' ';
 		while (*str != actuelletter)
 		{
-			acsii = actuelletter;
-			if (acsii + 1 == 126)
+			if (actuelletter + 1 == 126)
 				return ;
 			actuelletter++;
 			ft_putstr(words);
