@@ -2,3 +2,4 @@ compile.sh
 build/
 *.out
 gcc-rapports/
+norminette-rapports/
