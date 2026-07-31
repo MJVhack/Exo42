@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/31 16:33:14 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/31 16:33:54 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,4 @@ char	*ft_strstr(char *str, char *to_find);
 t_uint	ft_size_charp_strlcat(char *ptr);
 t_uint	ft_strlcat(char *dest, char *src, t_uint size);
 int		ft_strlen(char *str);
-void	ft_atoi(char *str)
+void	ft_atoi(char *str);
