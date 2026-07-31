@@ -6,11 +6,12 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 19:58:17 by evild             #+#    #+#             */
-/*   Updated: 2026/07/31 00:48:37 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/31 03:15:21 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../mylibc/multift.h"
+#include <unistd.h>
 
 void	ft_atoi(char *str)
 {
@@ -38,9 +39,4 @@ void	ft_atoi(char *str)
 		ft_putchar(*str);
 		str++;
 	}
-}
-
-int	main(void)
-{
-	ft_atoi("      +--+-----++--765698754");
 }
