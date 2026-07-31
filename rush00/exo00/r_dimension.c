@@ -6,11 +6,12 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/31 04:05:47 by evild             #+#    #+#             */
-/*   Updated: 2026/07/31 04:27:34 by evild            ###   ########.fr       */
+/*   Updated: 2026/07/31 13:06:52 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../mylibc/multift.h"
+#include <stdio.h>
 
 void	ft_print_x_line(int x, int display)
 {
@@ -18,8 +19,8 @@ void	ft_print_x_line(int x, int display)
 
 	if (display == 1)
 		ft_putchar('o');
-	i = 1;
-	while (i <= (x - 2))
+	i = 0;
+	while (i <= (x - 1))
 	{
 		ft_putchar('-');
 		i++;
@@ -34,13 +35,13 @@ void	rush(int x, int y)
 	int	j;
 	int	k;
 
-	j = 1;
+	j = 0;
 	ft_print_x_line(x, 1);
-	while (j <= (y - 2))
+	while (j <= (y - 1))
 	{
-		k = 1;
+		k = 0;
 		ft_putchar('|');
-		while (k <= (x - 2))
+		while (k <= (x - 1))
 		{
 			ft_putchar(' ');
 			k++;
