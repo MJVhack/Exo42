@@ -1,0 +1,58 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   r_dimension.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/31 04:05:47 by evild             #+#    #+#             */
+/*   Updated: 2026/07/31 04:21:17 by evild            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../../mylibc/multift.h"
+
+void	ft_print_x_line(int x, int display)
+{
+	int	i;
+
+	if (display == 1)
+		ft_putchar('o');
+	i = 1;
+	while (i <= (x - 2))
+	{
+		ft_putchar('-');
+		i++;
+	}
+	if (x > 1)
+		ft_putchar('o');
+	ft_putchar('\n');
+}
+
+void	rush(int x, int y)
+{
+	int	j;
+	int	k;
+
+	j = 1;
+	ft_print_x_line(x, 1);
+	while (j <= (y - 2))
+	{
+		k = 1;
+		ft_putchar('|');
+		while (k <= (x - 2))
+		{
+			ft_putchar(' ');
+			k++;
+		}
+		ft_putchar('|');
+		ft_putchar('\n');
+		j++;
+	}
+	ft_print_x_line(x, 1);
+}
+
+int	main(void)
+{
+	rush(6, 9);
+}
