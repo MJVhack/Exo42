@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   multift_put.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
+/*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:47:25 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/10 14:43:01 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/07/31 16:33:32 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,32 @@ void	ft_putstr(char *str)
 	{
 		write(1, &str[i], 1);
 		i++;
+	}
+}
+void	ft_atoi(char *str)
+{
+	char	sign;
+	char	other_sign;
+	char	tmp;
+
+	sign = '+';
+	other_sign = '-';
+	while (*str == ' ')
+		str++;
+	while (*str == '+' || *str == '-')
+	{
+		if (*str == '-')
+		{
+			tmp = other_sign;
+			other_sign = sign;
+			sign = tmp;
+		}
+		str++;
+	}
+	ft_putchar(sign);
+	while (*str)
+	{
+		ft_putchar(*str);
+		str++;
 	}
 }
