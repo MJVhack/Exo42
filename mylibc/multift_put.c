@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:47:25 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/31 16:33:32 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/01 12:40:40 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,23 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_putnbr(long long integer)
+void	ft_putnbr(int nb)
 {
-	if (integer < 0)
+	if (nb == -2147483648)
+	{
+		ft_putstr("-2147483648");
+		return ;
+	}
+	if (nb < 0)
 	{
 		ft_putchar('-');
-		integer = -integer;
+		nb = -nb;
 	}
-	if (integer >= 10)
+	if (nb >= 10)
 	{
-		ft_putnbr(integer / 10);
+		ft_putnbr(nb / 10);
 	}
-	ft_putchar((integer % 10) + '0');
+	ft_putchar((nb % 10) + '0');
 }
 
 void	ft_putstr(char *str)
