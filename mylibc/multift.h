@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/07/31 16:33:54 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/01 12:51:59 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,6 @@ t_uint	ft_size_charp_strlcat(char *ptr);
 t_uint	ft_strlcat(char *dest, char *src, t_uint size);
 int		ft_strlen(char *str);
 void	ft_atoi(char *str);
+char	*ft_convert_to_bin(char c, char *bin);
+void	ft_main_base_bin(char *str);
+void	ft_main_base_hex(char *str);
