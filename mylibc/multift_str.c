@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/08/01 12:09:50 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/01 12:11:04 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,9 @@
 
 void	ft_strcpy(char *src, char *dest)
 {
-	int	i;
-
-	i = 0;
-	while (src[i] != '\0')
+	while (*src)
 	{
-		dest[i] = src[i];
-		i++;
+		*dest++ = *src++;
 	}
 	dest[i] = '\0';
 }
