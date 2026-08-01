@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/27 18:51:06 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/01 12:09:50 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,14 @@ void	ft_strcpy(char *src, char *dest)
 
 void	ft_strncpy(char *src, char *dest, int n)
 {
-	int	i;
-
-	i = 0;
-	while (src[i] != '\0' && i <= n)
+	while (*src && n > 0)
 	{
-		dest[i] = src[i];
-		i++;
+		*dest = *src;
+		n--;
+		dest++;
+		src++;
 	}
-	dest[i] = '\0';
+	*dest = '\0';
 }
 
 int	ft_str_is_alpha(char *str)
