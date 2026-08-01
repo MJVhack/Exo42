@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   multift_tab.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: e.diabriek <e.diabriek@student.42.fr>      +#+  +:+       +#+        */
+/*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:41:40 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/07/10 14:42:04 by e.diabriek       ###   ########.fr       */
+/*   Updated: 2026/08/01 12:06:35 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,22 +28,14 @@ void	ft_swap(int *a, int *b)
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int	tabtmp[size];
 	int	i;
 	int	r;
 
 	i = 0;
-	r = size;
-	while (i <= size)
+	r = size - 1;
+	while (i < (r / 2))
 	{
-		tabtmp[i] = tab[r];
-		i++;
-		r--;
-	}
-	i = 0;
-	while (i <= size)
-	{
-		tab[i] = tabtmp[i];
+		ft_swap(&tab[i], &tab[r]);
 		i++;
 	}
 }
