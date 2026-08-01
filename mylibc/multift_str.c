@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/08/01 12:11:04 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/01 12:24:34 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,8 @@
 void	ft_strcpy(char *src, char *dest)
 {
 	while (*src)
-	{
 		*dest++ = *src++;
-	}
-	dest[i] = '\0';
+	*dest = '\0';
 }
 
 void	ft_strncpy(char *src, char *dest, int n)
@@ -195,28 +193,25 @@ unsigned int	ft_strlcpy(char *src, char *dest, unsigned int size)
 
 void	ft_putstr_non_printable(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
+	while (*str)
 	{
-		if (str[i] < 32 || str[i] == 127)
+		if (*str < 32 || *str == 127)
 		{
 			ft_putchar('\\');
-			ft_print_hex(str[i] / 16);
-			ft_print_hex(str[i] % 16);
+			ft_print_hex((unsigned char)*str / 16);
+			ft_print_hex((unsigned char)*str % 16);
 		}
 		else
 		{
-			ft_putchar(str[i]);
+			ft_putchar(*str);
 		}
-		i++;
+		str++;
 	}
 	ft_putchar('\n');
 }
 
 
-void	ft_print_hex(char c)
+void	ft_print_hex(unsigned char c)
 {
 	if (c <= 9)
 	{
