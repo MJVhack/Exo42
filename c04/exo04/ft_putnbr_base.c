@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/31 03:20:07 by evild             #+#    #+#             */
-/*   Updated: 2026/08/03 11:02:40 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/03 11:04:57 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,9 @@ int ft_check_base(char *base, t_uint size)
 
 void	ft_putnbr_base(int nbr, char *base)
 {
-    t_uint size = ft_strlen(base);
+    t_uint size;
+
+	size = ft_strlen(base);
 	if (ft_check_base(base, size))
 		return ;
 	if (nbr < 0)
