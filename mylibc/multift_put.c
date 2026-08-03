@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:47:25 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/08/01 12:40:40 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/03 11:21:51 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,5 +76,42 @@ void	ft_atoi(char *str)
 	{
 		ft_putchar(*str);
 		str++;
+	}
+}
+
+char    *ft_convert_to_bin(char c, char *bin)
+{
+    int        i;
+    char    bit[2];
+
+    i = 7;
+    bin[0] = '\0';
+    while (i >= 0)
+    {
+        bit[0] = ((c >> i) & 1) + '0';
+        bit[1] = '\0';
+        ft_strcat(bin, bit);
+        i--;
+    }
+    return (bin);
+}
+
+void	ft_main_base_bin(char *str)
+{
+	char bin[8];
+	while (*str)
+	{
+		ft_convert_to_bin(*str, bin);
+		ft_putstr(bin);
+		str++;
+	}
+}
+
+void    ft_main_base_hex(char *str)
+{
+    while (*str)
+	{
+		ft_print_hex(*str);
+        str++;
 	}
 }
