@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/08/03 17:52:28 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/03 17:59:15 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,3 +46,4 @@ char	*ft_convert_to_bin(char c, char *bin);
 void	ft_main_base_bin(char *str);
 void	ft_main_base_hex(char *str);
 int		ft_intcat(int n1, int n2);
+char	*ft_strchr(char *str, char c);

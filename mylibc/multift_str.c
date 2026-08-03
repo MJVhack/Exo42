@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/10 14:42:18 by e.diabriek        #+#    #+#             */
-/*   Updated: 2026/08/01 12:24:34 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/03 17:59:37 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -368,4 +368,11 @@ int	ft_strlen(char *str)
 		i++;
 	}
 	return (i);
+}
+
+char	*ft_strchr(char *str, char c)
+{
+	while (*str && *str != c)
+		str++;
+	return (str);
 }
