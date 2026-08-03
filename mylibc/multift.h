@@ -6,7 +6,7 @@
 /*   By: evild <e.diabriek@student.42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/08 04:02:05 by evil.diabri       #+#    #+#             */
-/*   Updated: 2026/08/03 17:59:15 by evild            ###   ########.fr       */
+/*   Updated: 2026/08/03 18:42:05 by evild            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,4 @@ void	ft_main_base_bin(char *str);
 void	ft_main_base_hex(char *str);
 int		ft_intcat(int n1, int n2);
 char	*ft_strchr(char *str, char c);
+int 	ft_iterative_factorial(int nb);
